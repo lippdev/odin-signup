@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'Norse Bold';
+  src: url(./src/fonts/Norse-Bold.woff2);
+}
+
+body {
+  margin: 0 0 0 0;
+  display: flex;
+  padding: auto;
+}
+* {
+  margin: 0;
+  padding: auto;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+main {
+  background-color: rgb(247, 247, 247);
+}
+
+sidebar {
+  width: 20%;
+  height: 100vh;
+  flex: 1 1 auto;
+  background-image: url(/src/back.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+sidebar header {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0;
+  background-color: rgba(0, 0, 0, 0.548);
+  font-size : 46px;
+  display: flex;
+}
+
+sidebar header h1 {
+  padding-top: 5px;
+  padding-left: 3px;
+  color: white;
+  font-family: 'Norse Bold';
+}
+
+sidebar footer {
+  margin-bottom: 16px;
+}
+
+sidebar footer p {
+  color: rgb(197, 197, 197);
+  font-size: 12px;
+  font-family: 'Poppins';
+}
+
+form {
+  display: flex;
+  gap: 4rem;
+}
+
+.text-area{
+  font-family: 'Poppins';
+  font-weight: 600;
+  padding: 120px 40px 180px 50px;
+  font-size: 20px;
+  width: 100%;
+  height: 100px;
+}
+
+.form-area {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 12px 32px 32px 50px;
+  background-color: white;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-area h2 {
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 600;
+  color: #1b1b1b;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.form-all {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-all div {
+display: flex;
+flex-direction: column;
+position: relative;
+}
+
+form label {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #1b1b1b;
+  font-family: 'Inter'
+}
+
+form input {
+  box-sizing: content-box;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #75757567;
+  width: 200px;
+}
+
+form input:focus-visible {
+  outline: none;
+  border: 1px solid #0700d3;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .6);
+}
+
+button[form=sign-up] {
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 48px;
+  margin: 13px 0 0 50px;
+  background-color: #596D48;
+  color: white;
+  margin-bottom: 32px;
+  border: none;
+  cursor: pointer;
+}
+
+.login{
+  font-family: 'Poppins';
+  font-size: 15px;
+  margin: 0 0 0 50px;
+}
+
+.login a{
+  text-decoration:none;
+  font-weight: 500;
+  color: #596D48;
+}
